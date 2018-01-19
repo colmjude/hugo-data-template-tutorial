@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+{{ range $.Site.Data.jazz.bass }}
+   {{ partial "artist.html" . }}
+{{ end }}
+
+{{ end }}
+
+
