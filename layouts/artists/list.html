@@ -1,8 +1,11 @@
 {{ define "main" }}
-
-{{ range $.Site.Data.jazz.bass }}
-   {{ partial "artist.html" . }}
+<ul>
+{{ range .Data.Pages }}
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
 {{ end }}
+</ul>
 
 {{ end }}
 
